@@ -1,11 +1,20 @@
 #!/usr/bin/python3
+"""
+A square challange
+"""
+
 
 class square():
-
+    """
+    defines the width and height of a sqaure
+    """
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
+        """
+        Sets the inital values of how the square is defined
+        """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -14,9 +23,13 @@ class square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
+        """
+        Perimeter of the square
+        """
         return (self.width * 4)
 
     def __str__(self):
+        """String return format"""
         return "{}/{}".format(self.width, self.height)
 
 
