@@ -5,7 +5,7 @@ if (typeof window !== 'undefined') {
 }
 
 var config = {
-    port: port,
+    port: 5000,
     baseUrl : typeof window !== 'undefined' ? window.location.origin : "http://0.0.0.0:" + port,
     pageTitle: 'React Blog',
     itemsPerPage: 5,
